@@ -4,7 +4,7 @@ This is a clone of Jason McIntosh's [plerd](https://github.com/jmacdotorg/plerd)
 
 ## depends on
 
-```cpanm DateTime DateTime::Format::W3CDTF File::Copy::Recursive FindBin Moose Path::Class Readonly Template Text::Markdown URI```
+```cpanm DateTime DateTime::Format::W3CDTF File::Copy::Recursive FindBin Moose Path::Class Readonly Template Text::MultiMarkdown URI```
 
 ## provides
 

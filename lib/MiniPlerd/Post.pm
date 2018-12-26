@@ -3,7 +3,7 @@ package MiniPlerd::Post;
 use Moose;
 use DateTime;
 use DateTime::Format::W3CDTF;
-use Text::Markdown qw( markdown );
+use Text::MultiMarkdown qw( markdown );
 use Text::SmartyPants;
 use URI;
 use HTML::Strip;
@@ -53,7 +53,7 @@ sub _process_blog_file {
   $self->date($self->plerd->datetime_formatter->parse_datetime($time_line));
   $self->date->set_time_zone('local');
 
-  $self->body(join "\n", <$fh>);
+  $self->body(join '', <$fh>);
   $self->$_(Text::SmartyPants::process(markdown($self->$_)))
     foreach qw/title body/;
   $self->title($self->title =~ s/<\/?p>\s*//gr);
