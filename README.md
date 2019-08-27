@@ -1,3 +1,7 @@
+# This repository is NOT MAINTAINED
+
+Be warned that this repository is no longer maintained.
+
 ## mini-plerd
 
 This is a clone of Jason McIntosh's [plerd](https://github.com/jmacdotorg/plerd) that I modified to have just what I needed for [kivanc's blog](https://kyzn.org). For actual blog content that is processed by this script, see [kyzn.org](https://github.com/kyzn/kyzn.org).
